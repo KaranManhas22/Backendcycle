@@ -23,5 +23,6 @@ jobs:
             cd /home/karan/Backendcycle/
             git pull origin main
             npm i
+            pm2 delete "backend"
             pm2 start index.js --name "backend"
             
